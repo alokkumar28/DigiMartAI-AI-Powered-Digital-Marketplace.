@@ -1,0 +1,133 @@
+# ================================
+# Dependencies
+# ================================
+node_modules/
+jspm_packages/
+web_modules/
+.pnp
+.pnp.js
+.yarn/cache
+.yarn/unplugged
+.yarn/build-state.yml
+.yarn/install-state.gz
+
+# ================================
+# Production Builds
+# ================================
+build/
+dist/
+dist-ssr/
+out/
+.next/
+.nuxt/
+.vite/
+*.tsbuildinfo
+
+# ================================
+# Environment Variables
+# ================================
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+.env.*.local
+
+# ================================
+# Logs
+# ================================
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+.npm/
+
+# ================================
+# Runtime Data
+# ================================
+pids/
+*.pid
+*.seed
+*.pid.lock
+
+# ================================
+# Testing & Coverage
+# ================================
+coverage/
+.nyc_output/
+*.lcov
+lib-cov
+
+# ================================
+# Editor & IDE
+# ================================
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+!.vscode/launch.json
+.idea/
+*.swp
+*.swo
+*.sublime-workspace
+*.sublime-project
+.history/
+
+# ================================
+# OS Files
+# ================================
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# ================================
+# Vite
+# ================================
+.vite/
+vite.config.ts.timestamp-*
+*.local
+
+# ================================
+# TypeScript
+# ================================
+*.tsbuildinfo
+.eslintcache
+
+# ================================
+# Cache
+# ================================
+.cache/
+.parcel-cache/
+.temp/
+.tmp/
+.eslintcache
+.stylelintcache
+.rpt2_cache/
+.rts2_cache_cjs/
+.rts2_cache_es/
+.rts2_cache_umd/
+
+# ================================
+# MongoDB
+# ================================
+data/db/
+dump/
+*.bson
+
+# ================================
+# Misc
+# ================================
+.monorepo
+*.tgz
+.pnpm-store/
+.vercel
+.netlify
+.firebase/
