@@ -79,3 +79,31 @@ export const login = async (req: Request, res: Response) => {
         });
     }
 };
+
+export const logout = async (req: Request, res: Response) => {
+    try {
+        const sessionId = req.cookies?.session;
+
+        if (sessionId) {
+            await redis.del(`session:${sessionId}`);
+        }
+
+        res.clearCookie("session", {
+            httpOnly: true,
+            secure: process.env.NODE_ENV === "production",
+            sameSite: "strict"
+        });
+
+        return res.status(200).json({
+            success: true,
+            message: "Logout successful"
+        });
+    } catch (error) {
+        console.error("Logout Error:", error);
+
+        return res.status(500).json({
+            success: false,
+            message: "Logout failed"
+        });
+    }
+};
