@@ -1,5 +1,6 @@
 import { cert, initializeApp } from "firebase-admin";
-
+import dotenv from 'dotenv'
+dotenv.config();
 export const app = initializeApp({
     credential:cert({
         projectId: process.env.FIREBASE_PROJECT_ID,
